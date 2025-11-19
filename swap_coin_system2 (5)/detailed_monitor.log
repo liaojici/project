@@ -1,0 +1,122 @@
+2025-11-01 23:46:09,838 - INFO - [detailed_monitor.py:148] - 🚀 启动详细监控...
+2025-11-01 23:46:09,844 - INFO - [settings.py:14] - 从 /www/python/swap_coin_system2/.env 加载环境变量
+2025-11-01 23:46:09,844 - INFO - [settings.py:29] - ✅ OKX_API_KEY: 已设置 (bf75****************************e6d2)
+2025-11-01 23:46:09,844 - INFO - [settings.py:29] - ✅ OKX_SECRET_KEY: 已设置 (ADFA************************1C3D)
+2025-11-01 23:46:09,844 - INFO - [settings.py:29] - ✅ OKX_PASSWORD: 已设置 (5918**Ljc@)
+2025-11-01 23:46:09,844 - INFO - [settings.py:35] - 环境变量检查通过
+2025-11-01 23:46:09,845 - INFO - [api_client.py:193] - 开始初始化OKX API...
+2025-11-01 23:46:10,154 - INFO - [api_client.py:197] - ✅ 账户API初始化成功
+2025-11-01 23:46:10,228 - INFO - [api_client.py:200] - ✅ 交易API初始化成功
+2025-11-01 23:46:10,307 - INFO - [api_client.py:204] - ✅ 市场API初始化成功
+2025-11-01 23:46:10,395 - INFO - [api_client.py:207] - ✅ 公共数据API初始化成功
+2025-11-01 23:46:10,455 - INFO - [api_client.py:210] - ✅ 交易数据API初始化成功
+2025-11-01 23:46:10,456 - INFO - [api_client.py:220] - 交易API实例: <okx.Trade.TradeAPI object at 0x7f25b2837b20>
+2025-11-01 23:46:10,456 - INFO - [api_client.py:221] - 交易API模块: <module 'okx.Trade' from '/www/python/.venv/lib/python3.10/site-packages/okx/Trade.py'>
+2025-11-01 23:46:10,457 - INFO - [api_client.py:223] - 所有OKX API初始化成功
+2025-11-01 23:46:10,616 - INFO - [_client.py:1025] - HTTP Request: GET https://www.okx.com/api/v5/account/positions "HTTP/2 200 OK"
+2025-11-01 23:46:10,621 - INFO - [state_manager.py:146] - ✅ 同步 5 个手动仓位，保证金: 12.33 USDT
+2025-11-01 23:46:10,665 - INFO - [_client.py:1025] - HTTP Request: GET https://www.okx.com/api/v5/account/balance?ccy=USDT "HTTP/2 200 OK"
+2025-11-01 23:46:10,667 - INFO - [api_client.py:57] - 获取到总权益 (totalEq): 43.55 USDT
+2025-11-01 23:46:10,713 - INFO - [_client.py:1025] - HTTP Request: GET https://www.okx.com/api/v5/trade/orders-pending?instType=SWAP "HTTP/2 200 OK"
+2025-11-01 23:46:10,715 - INFO - [state_manager.py:239] - 资产分配 - 总余额: 43.55, 可交易: 11.85, 仓位保证金: 12.33, 未成交订单保证金: 19.38
+2025-11-01 23:46:10,716 - INFO - [detailed_monitor.py:159] - ============================================================
+2025-11-01 23:46:10,716 - INFO - [detailed_monitor.py:160] - 📈 详细监控报告 - 2025-11-01 23:46:10
+2025-11-01 23:46:10,716 - INFO - [detailed_monitor.py:161] - ============================================================
+2025-11-01 23:46:10,717 - INFO - [detailed_monitor.py:126] - 💰 账户状态监控:
+2025-11-01 23:46:10,717 - INFO - [detailed_monitor.py:127] -    总权益: 43.55 USDT
+2025-11-01 23:46:10,717 - INFO - [detailed_monitor.py:128] -    可交易余额: 11.85 USDT
+2025-11-01 23:46:10,717 - INFO - [detailed_monitor.py:129] -    活跃仓位: 5 个
+2025-11-01 23:46:10,718 - INFO - [detailed_monitor.py:133] -    仓位总价值: 24.65 USDT
+2025-11-01 23:46:10,718 - INFO - [detailed_monitor.py:138] -    仓位占比: 56.6%
+2025-11-01 23:46:10,718 - INFO - [detailed_monitor.py:43] - 📊 开始监控 0 个标的的信号强度
+2025-11-01 23:46:10,718 - INFO - [detailed_monitor.py:83] - 📋 开始监控 5 个仓位
+2025-11-01 23:46:10,718 - INFO - [detailed_monitor.py:87] - 🔍 检查仓位 COAI-USDT-SWAP:
+2025-11-01 23:46:10,719 - INFO - [detailed_monitor.py:88] -    方向: long
+2025-11-01 23:46:10,719 - INFO - [detailed_monitor.py:89] -    大小: 47.0
+2025-11-01 23:46:10,719 - INFO - [detailed_monitor.py:90] -    开仓价: 1.275000
+2025-11-01 23:46:10,719 - INFO - [detailed_monitor.py:91] -    杠杆: 2.0x
+2025-11-01 23:46:10,757 - INFO - [_client.py:1025] - HTTP Request: GET https://www.okx.com/api/v5/market/candles?instId=COAI-USDT-SWAP&bar=1H&limit=50 "HTTP/2 200 OK"
+2025-11-01 23:46:10,766 - INFO - [detailed_monitor.py:106] -    当前价格: 2.283000
+2025-11-01 23:46:10,766 - INFO - [detailed_monitor.py:107] -    盈亏比例: 79.06%
+2025-11-01 23:46:10,819 - INFO - [_client.py:1025] - HTTP Request: GET https://www.okx.com/api/v5/market/candles?instId=COAI-USDT-SWAP&bar=1H&limit=50 "HTTP/2 200 OK"
+2025-11-01 23:46:11,622 - INFO - [_client.py:1025] - HTTP Request: GET https://www.okx.com/api/v5/market/candles?instId=COAI-USDT-SWAP&bar=1H&limit=100 "HTTP/2 200 OK"
+2025-11-01 23:46:11,703 - INFO - [_client.py:1025] - HTTP Request: GET https://www.okx.com/api/v5/public/funding-rate?instId=COAI-USDT-SWAP "HTTP/2 200 OK"
+2025-11-01 23:46:11,705 - INFO - [advanced_market_analysis.py:16] - ✅ 高级市场分析API初始化成功
+2025-11-01 23:46:11,768 - INFO - [_client.py:1025] - HTTP Request: GET https://www.okx.com/api/v5/rubik/stat/margin/loan-ratio?ccy=COAI&period=1H "HTTP/2 200 OK"
+2025-11-01 23:46:11,800 - INFO - [_client.py:1025] - HTTP Request: GET https://www.okx.com/api/v5/rubik/stat/taker-volume?ccy=COAI&instType=SPOT&period=1H "HTTP/2 200 OK"
+2025-11-18 21:57:27,712 - INFO - [detailed_monitor.py:148] - 🚀 启动详细监控...
+2025-11-18 21:57:27,715 - INFO - [settings.py:14] - 从 /www/python/swap_coin_system2/.env 加载环境变量
+2025-11-18 21:57:27,715 - INFO - [settings.py:29] - ✅ OKX_API_KEY: 已设置 (bf75****************************e6d2)
+2025-11-18 21:57:27,715 - INFO - [settings.py:29] - ✅ OKX_SECRET_KEY: 已设置 (ADFA************************1C3D)
+2025-11-18 21:57:27,715 - INFO - [settings.py:29] - ✅ OKX_PASSWORD: 已设置 (5918**Ljc@)
+2025-11-18 21:57:27,715 - INFO - [settings.py:35] - 环境变量检查通过
+2025-11-18 21:57:27,716 - INFO - [api_client.py:193] - 开始初始化OKX API...
+2025-11-18 21:57:28,017 - INFO - [api_client.py:197] - ✅ 账户API初始化成功
+2025-11-18 21:57:28,090 - INFO - [api_client.py:200] - ✅ 交易API初始化成功
+2025-11-18 21:57:28,155 - INFO - [api_client.py:204] - ✅ 市场API初始化成功
+2025-11-18 21:57:28,229 - INFO - [api_client.py:207] - ✅ 公共数据API初始化成功
+2025-11-18 21:57:28,300 - INFO - [api_client.py:210] - ✅ 交易数据API初始化成功
+2025-11-18 21:57:28,300 - INFO - [api_client.py:220] - 交易API实例: <okx.Trade.TradeAPI object at 0x7fab851978e0>
+2025-11-18 21:57:28,300 - INFO - [api_client.py:221] - 交易API模块: <module 'okx.Trade' from '/www/python/.venv/lib/python3.10/site-packages/okx/Trade.py'>
+2025-11-18 21:57:28,300 - INFO - [api_client.py:223] - 所有OKX API初始化成功
+2025-11-18 21:57:28,631 - INFO - [_client.py:1025] - HTTP Request: GET https://www.okx.com/api/v5/account/positions "HTTP/2 200 OK"
+2025-11-18 21:57:28,634 - INFO - [detailed_monitor.py:159] - ============================================================
+2025-11-18 21:57:28,635 - INFO - [detailed_monitor.py:160] - 📈 详细监控报告 - 2025-11-18 21:57:28
+2025-11-18 21:57:28,635 - INFO - [detailed_monitor.py:161] - ============================================================
+2025-11-18 21:57:28,635 - INFO - [detailed_monitor.py:126] - 💰 账户状态监控:
+2025-11-18 21:57:28,636 - ERROR - [detailed_monitor.py:178] - 监控循环发生错误: unsupported format string passed to NoneType.__format__
+2025-11-18 21:57:58,671 - INFO - [detailed_monitor.py:159] - ============================================================
+2025-11-18 21:57:58,671 - INFO - [detailed_monitor.py:160] - 📈 详细监控报告 - 2025-11-18 21:57:58
+2025-11-18 21:57:58,672 - INFO - [detailed_monitor.py:161] - ============================================================
+2025-11-18 21:57:58,672 - INFO - [detailed_monitor.py:126] - 💰 账户状态监控:
+2025-11-18 21:57:58,672 - ERROR - [detailed_monitor.py:178] - 监控循环发生错误: unsupported format string passed to NoneType.__format__
+2025-11-18 21:59:26,055 - INFO - [detailed_monitor.py:148] - 🚀 启动详细监控...
+2025-11-18 21:59:26,059 - INFO - [settings.py:14] - 从 /www/python/swap_coin_system2/.env 加载环境变量
+2025-11-18 21:59:26,060 - INFO - [settings.py:29] - ✅ OKX_API_KEY: 已设置 (bf75****************************e6d2)
+2025-11-18 21:59:26,060 - INFO - [settings.py:29] - ✅ OKX_SECRET_KEY: 已设置 (ADFA************************1C3D)
+2025-11-18 21:59:26,060 - INFO - [settings.py:29] - ✅ OKX_PASSWORD: 已设置 (5918**Ljc@)
+2025-11-18 21:59:26,060 - INFO - [settings.py:35] - 环境变量检查通过
+2025-11-18 21:59:26,061 - INFO - [api_client.py:193] - 开始初始化OKX API...
+2025-11-18 21:59:26,360 - INFO - [api_client.py:197] - ✅ 账户API初始化成功
+2025-11-18 21:59:26,432 - INFO - [api_client.py:200] - ✅ 交易API初始化成功
+2025-11-18 21:59:26,506 - INFO - [api_client.py:204] - ✅ 市场API初始化成功
+2025-11-18 21:59:26,567 - INFO - [api_client.py:207] - ✅ 公共数据API初始化成功
+2025-11-18 21:59:26,638 - INFO - [api_client.py:210] - ✅ 交易数据API初始化成功
+2025-11-18 21:59:26,638 - INFO - [api_client.py:220] - 交易API实例: <okx.Trade.TradeAPI object at 0x7f83e93678b0>
+2025-11-18 21:59:26,639 - INFO - [api_client.py:221] - 交易API模块: <module 'okx.Trade' from '/www/python/.venv/lib/python3.10/site-packages/okx/Trade.py'>
+2025-11-18 21:59:26,640 - INFO - [api_client.py:223] - 所有OKX API初始化成功
+2025-11-18 21:59:26,750 - INFO - [_client.py:1025] - HTTP Request: GET https://www.okx.com/api/v5/account/positions "HTTP/2 200 OK"
+2025-11-18 21:59:26,753 - INFO - [detailed_monitor.py:159] - ============================================================
+2025-11-18 21:59:26,753 - INFO - [detailed_monitor.py:160] - 📈 详细监控报告 - 2025-11-18 21:59:26
+2025-11-18 21:59:26,753 - INFO - [detailed_monitor.py:161] - ============================================================
+2025-11-18 21:59:26,753 - INFO - [detailed_monitor.py:126] - 💰 账户状态监控:
+2025-11-18 21:59:26,754 - ERROR - [detailed_monitor.py:178] - 监控循环发生错误: unsupported format string passed to NoneType.__format__
+2025-11-18 21:59:56,759 - INFO - [detailed_monitor.py:159] - ============================================================
+2025-11-18 21:59:56,759 - INFO - [detailed_monitor.py:160] - 📈 详细监控报告 - 2025-11-18 21:59:56
+2025-11-18 21:59:56,760 - INFO - [detailed_monitor.py:161] - ============================================================
+2025-11-18 21:59:56,760 - INFO - [detailed_monitor.py:126] - 💰 账户状态监控:
+2025-11-18 21:59:56,760 - ERROR - [detailed_monitor.py:178] - 监控循环发生错误: unsupported format string passed to NoneType.__format__
+2025-11-18 22:28:52,593 - INFO - [detailed_monitor.py:77] - 🚀 启动详细监控...
+2025-11-18 22:28:52,597 - INFO - [settings.py:14] - 从 /www/python/swap_coin_system2/.env 加载环境变量
+2025-11-18 22:28:52,597 - INFO - [settings.py:29] - ✅ OKX_API_KEY: 已设置 (bf75****************************e6d2)
+2025-11-18 22:28:52,597 - INFO - [settings.py:29] - ✅ OKX_SECRET_KEY: 已设置 (ADFA************************1C3D)
+2025-11-18 22:28:52,597 - INFO - [settings.py:29] - ✅ OKX_PASSWORD: 已设置 (5918**Ljc@)
+2025-11-18 22:28:52,597 - INFO - [settings.py:35] - 环境变量检查通过
+2025-11-18 22:28:52,598 - INFO - [api_client.py:193] - 开始初始化OKX API...
+2025-11-18 22:28:52,911 - INFO - [api_client.py:197] - ✅ 账户API初始化成功
+2025-11-18 22:28:52,972 - INFO - [api_client.py:200] - ✅ 交易API初始化成功
+2025-11-18 22:28:53,040 - INFO - [api_client.py:204] - ✅ 市场API初始化成功
+2025-11-18 22:28:53,107 - INFO - [api_client.py:207] - ✅ 公共数据API初始化成功
+2025-11-18 22:28:53,185 - INFO - [api_client.py:210] - ✅ 交易数据API初始化成功
+2025-11-18 22:28:53,186 - INFO - [api_client.py:220] - 交易API实例: <okx.Trade.TradeAPI object at 0x7f5a640bf760>
+2025-11-18 22:28:53,186 - INFO - [api_client.py:221] - 交易API模块: <module 'okx.Trade' from '/www/python/.venv/lib/python3.10/site-packages/okx/Trade.py'>
+2025-11-18 22:28:53,187 - INFO - [api_client.py:223] - 所有OKX API初始化成功
+2025-11-18 22:28:53,335 - INFO - [_client.py:1025] - HTTP Request: GET https://www.okx.com/api/v5/account/positions "HTTP/2 200 OK"
+2025-11-18 22:28:53,338 - INFO - [detailed_monitor.py:89] - ========================================
+2025-11-18 22:28:53,339 - INFO - [detailed_monitor.py:31] - 💰 账户状态监控:
+2025-11-18 22:28:53,339 - INFO - [detailed_monitor.py:33] -    总权益: 0.00 USDT
+2025-11-18 22:28:53,339 - INFO - [detailed_monitor.py:34] -    可交易余额: 0.00 USDT
+2025-11-18 22:28:53,339 - INFO - [detailed_monitor.py:35] -    活跃仓位: 0 个
+2025-11-18 22:28:53,339 - INFO - [detailed_monitor.py:38] -    仓位总价值: 0.00 USDT
+2025-11-18 22:28:53,340 - INFO - [detailed_monitor.py:47] - 暂无监控标的
+2025-11-18 22:28:53,340 - INFO - [detailed_monitor.py:92] - ========================================
